@@ -13,7 +13,7 @@
 				<li><a href="#">O autorze</a></li>
 				<li><a href="#">Forum</a></li>
 				<li id="logmenu"><a href="profile.php" >Profil</a></li>
-				<li id="logoutmenu"><a href="log_out.php" >Wyloguj</a></li>
+				<li id="logoutmenu"><a href="dataScripts/log_out.php" >Wyloguj</a></li>
 			</ul>
 				
 		</nav>

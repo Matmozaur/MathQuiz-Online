@@ -1,4 +1,4 @@
-<?php include 'dataScripts/register.php'; ?>
+<?php include 'register.php'; ?>
 <?php
 
 	if ((isset($_SESSION['logIn'])) && ($_SESSION['logIn']==true)) $header='header_log.php';

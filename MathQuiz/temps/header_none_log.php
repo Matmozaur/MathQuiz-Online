@@ -14,7 +14,7 @@
 			</ul>
 				<div class="login">
 					<button id="close" onclick="log()">x</button>
-						<form action="log_in.php" method="post">
+						<form action="dataScripts/log_in.php" method="post">
 							<input type="text" name="login" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'" >
 			
 							<input type="password" name="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'" >

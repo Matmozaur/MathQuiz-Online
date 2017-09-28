@@ -1,4 +1,4 @@
-<?php include 'startingtest.php'; ?>
+<?php include 'dataScripts/startingtest.php'; ?>
 <?php
 
 	if ((isset($_SESSION['logIn'])) && ($_SESSION['logIn']==true)){
@@ -22,9 +22,9 @@
 	
 	<meta name="description" content="Test poziomujący z matematyki" />
 	<meta name="keywords" content="matematyki,matematyka,test,quiz,poziomujący,sprawdź" />
-	<link rel="stylesheet" href="test.css">
-	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="logAndReg.css">
+	<link rel="stylesheet" href="css/test.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/logAndReg.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rum+Raisin" rel="stylesheet"> 

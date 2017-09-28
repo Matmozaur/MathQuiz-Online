@@ -137,6 +137,8 @@ select:focus
 
 
 
+
+
 #teststart
 {
 	text-align:center;
@@ -149,9 +151,10 @@ select:focus
 	font-size: 25px;
 	font-weight:800;
 	border: 2px solid #a5cda5;
-	background-image: url("img/reg.png");
+	background-image: url("../img/reg.png");
 
 }
+
 
 .error
 {

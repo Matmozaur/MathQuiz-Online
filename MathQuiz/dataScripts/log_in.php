@@ -4,7 +4,7 @@
 	if ((!isset($_POST['login'])) || (!isset($_POST['password'])))
 	{
 		$_SESSION['miss'] = '<span style="color:red; ">Nieprawidłowy login lub hasło!</span>';
-		header('Location: index.php');
+		header('Location: ../index.php');
 		exit();
 	}
 
@@ -42,18 +42,18 @@
 					$_SESSION['uniwersity'] = $row['uniwersity'];
 					unset($_SESSION['miss']);
 					$result->free_result();
-					header('Location: index.php');
+					header('Location: ../index.php');
 				}
 				else 
 				{
 					$_SESSION['miss'] = '<span style="color:red">Nieprawidłowy login lub hasło!</span>';
-					header('Location: index.php');
+					header('Location: ../index.php');
 				}
 			} 
 			else {
 				
 				$_SESSION['miss'] = '<span style="color:red;">Nieprawidłowy login lub hasło!</span>';
-				header('Location: index.php');
+				header('Location: ../index.php');
 				
 			}
 			
