@@ -141,6 +141,7 @@ select:focus
 
 #teststart
 {
+	background-image: url(img/image2.png);
 	text-align:center;
 	width: 600px;
 	padding: 50px;
@@ -151,7 +152,6 @@ select:focus
 	font-size: 25px;
 	font-weight:800;
 	border: 2px solid #a5cda5;
-	background-image: url("../img/reg.png");
 
 }
 

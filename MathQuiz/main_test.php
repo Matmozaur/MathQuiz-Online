@@ -39,18 +39,19 @@
 		echo $_SESSION['miss'];
 		unset($_SESSION['miss']);
 	}
+	echo 'Points: '.$_SESSION['points'];
 	?>
 	<main>
 		<form id="testMain" action='dataScripts/overall_testing.php'  method='post' >
 								<?php echo $_SESSION['counter']+1; ?>/25
 								<h2><?php echo $_SESSION['question'][$_SESSION['counter']]; ?> <h2>
-								<input name="Ans" type="submit"  value="A"> <?php echo $_SESSION['ansA'][$_SESSION['counter']]; ?>
+								<input name="Ans" type="submit"  value="a"> <?php echo $_SESSION['ansA'][$_SESSION['counter']]; ?>
 								</br>
-								<input name="Ans" type="submit"  value="B"> <?php echo $_SESSION['ansB'][$_SESSION['counter']]; ?>
+								<input name="Ans" type="submit"  value="b"> <?php echo $_SESSION['ansB'][$_SESSION['counter']]; ?>
 								</br>
-								<input name="Ans" type="submit"  value="C"> <?php echo $_SESSION['ansC'][$_SESSION['counter']]; ?>
+								<input name="Ans" type="submit"  value="c"> <?php echo $_SESSION['ansC'][$_SESSION['counter']]; ?>
 								</br>
-								<input name="Ans" type="submit"  value="D"> <?php echo $_SESSION['ansD'][$_SESSION['counter']]; ?>
+								<input name="Ans" type="submit"  value="d"> <?php echo $_SESSION['ansD'][$_SESSION['counter']]; ?>
 								</br>
 								<input id="nope" name="Ans" type="submit"  value="Nie wiem">
 			</form>

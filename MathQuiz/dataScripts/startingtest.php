@@ -5,12 +5,13 @@
 		$_SESSION['education']=$_POST['education'];
 		$_SESSION['uniwersity']=$_POST['uniwersity'];
 		$lvl='B1';
+		$_SESSION['lvlnum']=5;
 		switch($_SESSION['education']){
-			case 'Szkoła podstawowa': $lvl='A1'; break;
-			case 'Gimnazjum': $lvl='A2'; break;
-			case 'Szkoła zawodowa': $lvl='A2'; break;
-			case 'Studia': $lvl='B2'; break;
-			case 'Inne': $lvl='B2'; break;	
+			case 'Szkoła podstawowa': $lvl='A1';$lvlnum=1; break;
+			case 'Gimnazjum': $lvl='A2';$lvlnum=3; break;
+			case 'Szkoła zawodowa': $lvl='A2';$lvlnum=3; break;
+			case 'Studia': $lvl='B2';$lvlnum=7; break;
+			case 'Inne': $lvl='B2'; $lvlnum=7; break;
 		}
 		header('Location: main_test.php');
 		require_once "myData.php";
@@ -32,6 +33,8 @@
 						$_SESSION['ansC']=tab4[5];
 						$_SESSION['ansD']=tab5[5];
 						$_SESSION['correct']=tab6[5];
+						$_SESSION['lvlgood']=tab7[13];
+						$_SESSION['lvlbad']=tab8[13];
 						for($i=0;$i<5;$i++){
 							$row = $result->fetch_assoc();
 							$_SESSION['question'][$i] =$row['QText'];
@@ -40,7 +43,15 @@
 							$_SESSION['ansC'][$i] = $row['QAnswerC'];;
 							$_SESSION['ansD'][$i] = $row['QAnswerD'];
 							$_SESSION['correct'][$i] = $row['Correct'];
+							$_SESSION['points']=0;
+							
+							for($j=0;$j<=12;$j++){
+								$_SESSION['lvlgood'][$j]=0;
+								$_SESSION['lvlbad'][$j]=0;
+							}
+							
 							$_SESSION['counter']=0;
+							
 						}
 						$result->free_result();
 			}

@@ -2,10 +2,7 @@
 
 	session_start();
 	if ((isset($_SESSION['logIn'])) && ($_SESSION['logIn']==true)) $header='temps/header_log.php';
-	else{
-		header('temps/Location: index.php');
-		exit();
-	}
+	else $header='temps/header_none_log.php';
 	
 ?>
 <!DOCTYPE HTML>
@@ -27,14 +24,21 @@
 	
 	<script src="jquery-1.11.3.min.js"></script>
 	<script src="myjs.js"></script>
-
 </head>
-
 <body>
-
 	<?php include $header; ?>
-	<h1><?php echo $_SESSION['login'].$_SESSION['age']; ?></h1>
-	
+	<?php
+	if(isset($_SESSION['miss'])){
+		echo $_SESSION['miss'];
+		unset($_SESSION['miss']);
+	}
+	?>
+	<main>
+		<article>
+			<h1>Twoja stara by to lepiej napisała!</h1>
+			
+		</article>
+	</main>
 	
 	
 	

@@ -1,7 +1,7 @@
 body
 {
 	margin: 0;
-	background-image: url("img/crissXcross.png");
+	background-image: url(img/crissXcross.png);
 	color: #efefef;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
@@ -381,6 +381,6 @@ input:focus:-ms-input-placeholder
 	font-size:26;
 	font-weight:700;
 	border: 2px solid #a5cda5;
-	background-image: url("img/reg.png");
+	background-image: url("img/image2.png");
 
 }
